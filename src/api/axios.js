@@ -11,7 +11,7 @@ import axios from 'axios'
 import { message } from 'antd'
 
 axios.defaults.headers = {
-    Authorization: 'token 1305310d3434c952b41c36090511c59dab4fba7e',
+    Authorization: 'token e4b8dac0d649599cfa97a8292a18085ceada75d1',
     Accept: "application/vnd.github.v3+json",
     'If-Modified-Since':0
 }

@@ -35,7 +35,7 @@ export default class Blog extends Component {
                         </ul>
                         <Search placeholder="input search" onSearch={this.search} loading={this.state.isStatus} />
                     </div>
-                    <a className='admin' href='/admin'></a>
+                    <Link to='/admin' className='admin'></Link>
                 </Header>
                 <Content className='content'>
                     <div className='center'>
