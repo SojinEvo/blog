@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, BrowserRouter, Switch, } from 'react-router-dom'
+import { Route, HashRouter, Switch, } from 'react-router-dom'
 import Home from './views/home'
 import Blog from './views/blog'
 import Admin from './views/admin'
@@ -9,7 +9,7 @@ import Add from './views/add'
 export default class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/blog' component={Blog} />
@@ -17,7 +17,7 @@ export default class App extends Component {
           <Route path='/edit' component={Edit} />
           <Route path='/add' component={Add} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }
