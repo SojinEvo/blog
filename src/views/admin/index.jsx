@@ -23,8 +23,8 @@ export default class Admin extends Component {
     render() {
         return (
             <div className='adminContainer'>
-                <a className='icon' href='/'></a>
-                <a className='add' href='/add'></a>
+                <Link className='icon' to='/'></Link>
+                <Link className='add' to='/add'></Link>
                 <div className='center'>
                     {
                         this.state.all.map((item, index) => {
