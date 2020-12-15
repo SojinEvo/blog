@@ -10,11 +10,7 @@ axios.get()/post()返回的就是 promise 对象
 import axios from 'axios'
 import { message } from 'antd'
 
-axios.defaults.headers = {
-    Authorization: 'token  43c5d063daa4d047266e',
-    Accept: "application/vnd.github.v3+json",
-    'If-Modified-Since':0
-}
+
 
 export default function ajax(url, data = {}, method = 'GET') {
     return new Promise(function (resolve, reject) {
