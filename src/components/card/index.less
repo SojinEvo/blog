@@ -1,0 +1,27 @@
+@border:1px solid #e6e3e3;
+@margin :10px;
+@shadow:0 3px 3px rgba(26, 26, 26, 0.1);
+.container{
+    width: 100%;
+    height: 100%;
+    .tag{
+        width: 100%;
+        margin-top: 0;
+        border: @border;
+        box-shadow:@shadow;
+        padding: @margin+3;
+        a{
+            font-size: 18px;
+        }
+        p{
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap
+        }
+        .txt {
+            height: 40px;
+           
+           
+        }
+    }
+}

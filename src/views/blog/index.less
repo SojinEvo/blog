@@ -1,0 +1,115 @@
+@border:1px solid #e6e3e3;
+@margin :10px;
+@shadow:0 3px 3px rgba(26, 26, 26, 0.1);
+@mapa:{
+    margin: 0;
+    padding: 0;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background: url(./img/bjt.jpeg) no-repeat;
+    background-size: cover;
+    background-position-y: 28%;
+    overflow: auto;
+}
+
+.header {
+    @mapa();
+    border-bottom:@border ;
+    background-color: #fff;
+    opacity: 0.71;
+    display: flex;
+    align-items: center;
+    .icon{
+        display: block;
+        width: 40px;
+        height: 40px;
+        background: url(./img/博客专家.png) no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        position: absolute;
+        left: 30px;
+        .link{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .center{
+        width: 768px;
+        margin: 0 auto;
+        box-shadow:@shadow;
+        display: flex;
+        align-items: center;
+        .menuList {     
+            width: 100%;
+            display: flex;
+            list-style: none;
+            @mapa();
+
+            .nav{
+                margin-left: @margin;
+                li{
+                    text-align: center;
+                    cursor: pointer;
+                    font-size: 18px;
+                    color: #00b0ab;
+                    margin: 0;
+                }
+            }
+            .active_boder{
+                border-bottom: 3px solid #119579;
+            }
+
+        }
+    }  
+    .admin{
+        display: block;
+        width: 35px;
+        height: 35px;
+        background: url(./img/管理.png) no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+        }    
+}
+
+.content {
+    background-color: #fff;
+    opacity: 0.6;
+    overflow: auto;
+    .center{
+        .header.center();
+        flex-direction: column;
+        border: 1px solid rgb(34, 33, 33);
+        border-top: none;
+        border-bottom: none;
+        
+    }
+}
+
+/*滚动条样式*/
+.content::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 8px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px;
+  }
+.content::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.2);
+  }
+.content::-webkit-scrollbar-track {
+    cursor: pointer;
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+
+
